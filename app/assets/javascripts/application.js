@@ -19,3 +19,4 @@
 //= require gsdk-bootstrapswitch
 //= require custom
 //= require jquery-ui-1.10.4.custom.min.js
+//= require login-register

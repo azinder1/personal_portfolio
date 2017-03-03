@@ -1,6 +1,17 @@
 
-    <h1 class="text-center">Projects<br><small class="subtitle">Github Repos</small></h1>
-    <% @results.each do |repo| %>
-      <%= link_to repo["name"], "https://github.com/azinder1/" + repo["name"] %>
-      <hr>
+<h1 class="text-center">Projects<br><small class="subtitle">Github Repos</small></h1>
+<div class="container">
+  <% @results.in_groups_of(3) do |group| %>
+  <div class="row">
+    <% group.each do |repo| %>
+      <% if repo %>
+        <div class="col-md-4">
+          <%= link_to repo["name"], "https://github.com/azinder1/" + repo["name"]%>
+          <hr>
+        </div>
+      <% end %>
     <% end %>
+  </div>
+  <% end %>
+
+</div>
