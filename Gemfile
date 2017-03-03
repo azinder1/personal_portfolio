@@ -37,7 +37,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'rest-client'
 gem 'bootstrap-sass'
-gem 'github_api'
 gem 'json'
 gem 'httparty'
 
