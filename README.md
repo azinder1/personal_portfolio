@@ -1,24 +1,36 @@
-# README
+# _Personal Portfolio Site_
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### _Personal Portfolio Site, March 3rd, 2017_
 
-Things you may want to cover:
+#### By _**Adam Zinder**_
 
-* Ruby version
+## Description
 
-* System dependencies
+_Rails App on single page using AJAX, Github API and templeting sass guides_
 
-* Configuration
+## Setup/Installation Requirements
 
-* Database creation
+* _$ git clone https://github.com/azinder1/personal_portfolio_
+* _$ rails db:create_
+* _$ rails db:migrate db:test:prepare_
+* _$ rails db:seed_
+* _$ rails s_
+* _Use localhost:3000 in browser of choice_
 
-* Database initialization
+## Known Bugs
 
-* How to run the test suite
+_None that are known_
 
-* Services (job queues, cache servers, search engines, etc.)
+## Support and contact details
 
-* Deployment instructions
+_https://github.com/azinder1_
 
-* ...
+## Technologies Used
+
+_AJAX, Ruby on Rails, Sass, Materialize_
+
+### License
+
+*MIT*
+
+Copyright (c) 2016 **_Adam Zinder_**
