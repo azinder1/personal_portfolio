@@ -1,0 +1,7 @@
+<h3>Projects</h3>
+<% if @results %>
+  <% @results.each do |repo| %>
+    <%= link_to repo["name"], "https://github.com/azinder1/" + repo["name"] %>
+    <hr>
+    <% end %>
+<% end %>
