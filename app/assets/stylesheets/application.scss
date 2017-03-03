@@ -10,3 +10,23 @@
   height: 100vh;
   width: 100vw;
 }
+
+.landing_title {
+  top: 50%;
+  left: 50%;
+}
+.landing_button {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  font-size: 40px;
+  background-color: #e6e6fa;
+  border-color: #e6e6fa ;
+}
+
+.nav-bar {
+  display:none
+}
+// #about-page {
+//   transform: translate(0%, 50%) matrix(1, 0, 0, 1, 0, 0);
+// }

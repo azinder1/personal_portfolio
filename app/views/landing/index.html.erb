@@ -1,11 +1,62 @@
-<%= content_for :landingindex do %>
-<div class="blurred-container">
-  <div class="img-src"> </div>
+<div id="navbar-full">
+<div id="navbar">
+<!--
+  navbar-default can be changed with navbar-ct-blue navbar-ct-azzure navbar-ct-red navbar-ct-green navbar-ct-orange
+  -->
+  <nav class="navbar navbar-ct-blue navbar-transparent navbar-fixed-top nav-bar" role="navigation">
+
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <%= link_to "Adam's Portfolio", about_path, class: "navbar-brand", remote: true %>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+                <a href="#gsdk" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><%= link_to "Projects", project_path, remote: true %></li>
+                </ul>
+          </li>
+          <li>
+              <a href="javascript:void(0);" data-toggle="search" class="hidden-xs"><i class="fa fa-search"></i></a>
+          </li>
+        </ul>
+         <form class="navbar-form navbar-left navbar-search-form" role="search">
+           <div class="form-group">
+                <input type="text" value="" class="form-control" placeholder="Search...">
+           </div>
+        </form>
+        <% if current_user %>
+          <ul class="nav navbar-nav navbar-right">
+            <li class= "btn btn-default"><%= current_user.email %></li>
+           <% else %>
+           <ul class="nav navbar-nav navbar-right">
+              <li ><%= link_to "Sign In", new_user_session_path, class: 'btn btn-round btn-default'%></li>
+            </ul>
+          <% end %>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+    <%= link_to "ENTER", about_path, class: "btn btn-default btn-lg landing_button", remote: true  %>
+  <div class="blurred-container">
+    <div class="img-src"> </div>
+  </div>
+</div><!--  end navbar -->
+
 </div>
-<% end %>
 <div id="about">
 
 </div>
 
 <div id="projects">
+
 </div>
