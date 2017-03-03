@@ -1,0 +1,12 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "gsdk";
+
+
+.img-src {
+  background-image: asset-url('lake.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  width: 100vw;
+}
