@@ -37,7 +37,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'rest-client'
 gem 'bootstrap-sass'
-gem 'dotenv-rails'
+gem 'github_api'
+gem 'json'
+gem 'httparty'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -49,6 +51,11 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'pry'
   gem 'simplecov', require: false
+  gem 'dotenv-rails'
+  gem 'vcr'
+  gem 'webmock'
+  gem 'dotenv-rails'
+
 end
 
 group :development do
